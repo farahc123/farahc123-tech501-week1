@@ -1,0 +1,29 @@
+ Cloud notes
+
+> ## [For Sparta: see important rules about use]
+
+- when deleting, delete everything associated with vm's name (e.g. if vm ends with week1-vm, everything week1-vm's name is associated with it), so vm, ip, network security group, network interface, disk
+- BE SURE NOT TO DELETE RESOURCE GROUP
+- go into three-dot menu, apply force delete, confirm deletion with typing
+
+## second vm
+
+name: tech501-farah-first-deploy-app-vm
+standard security type
+ubuntu server 22.04 lts x64 gen2
+
+all other settings default
+
+user our existing key
+
+ssh and http ports
+
+disk standard ssd
+
+- networking: set to your  public subnet
+  - this part allows NSG to be reusable when we delete this vm
+  - select advanced network security group
+  - create new > security group
+  - add inbound rule, set Service to HTTP 
+  - rename network security group to tech501-farah-sparta-app-allow-HTTP-SSH-3000
+- back in networking tab, enable delete public ip
