@@ -3,6 +3,7 @@
 - [Git Bash commands and repo steps in VSCode and GitHub](#git-bash-commands-and-repo-steps-in-vscode-and-github)
   - [Git](#git)
   - [Git code](#git-code)
+    - [Git user code](#git-user-code)
     - [Initial steps for adding an existing local repo to Github](#initial-steps-for-adding-an-existing-local-repo-to-github)
   - [VSCode](#vscode)
 
@@ -26,7 +27,7 @@
 
 -   ***code .*** — opens VS code for working directory
 
--   ***git add .*** — stages everything in the current directory; specify files to avoid staging all
+-   ***git add .*** — stages everything in the current directory; specify files to avoid staging all like ***git add hello.py***
 
 -   ***git commit -m "\<optional message for commit>"*** — commits file with the given commit message
 
@@ -34,12 +35,17 @@
 -    ***git push -u origin \<branch name e.g. main>*** — syncs the files and commit history to the previously added remote repo
 
 -   ***git pull origin —*** fetches the most recent changes to a repo and merges them into your local copy, thereby updating it
--   ***git config [specific level, configuration value to be viewed e.g. *user.name* or flag]** — views settings
+-   ***.gitignore*** **file** — this is a file that contains information you don't want Git to ever stage or commit; you can tell it to ignore specific files, entire directories, or use pattern matching to ignore files matching certain criteria, e.g. using a wildcard to tell it to ignore all ***\*.log*** files
+-   ***git diff*** — shows the changes between your untracked and staged files
+    -   ***git diff --staged*** — shows the changes between your staged and committed files
+-   ***git restore --staged [filename]*** — removes file from staging area so it won't be committed 
+
+### Git user code
+
+-  ***git config [global/local, configuration value to be viewed e.g. *user.name* or flag]** — views settings
     -   ***git config [specific configuration value to be viewed e.g. *user.name* or flag]** — views settings
     -   ***git config --list*** — views settings in a list format
-    -   ***git config --[level] [setting to be set] [value to  be set]*** — sets given configuration to given value at given level, e.g. ***git config --global user.name "Farah"*** applies user name globally to Farah
--   
-
+    -   ***git config --[level] [setting to be set] [value to  be set]*** — sets given configuration to given value at given level, e.g. ***git config --global user.name "the value in quotes"*** applies user name globally to Farah 
 
 ### Initial steps for adding an existing local repo to Github
 

@@ -1,7 +1,7 @@
 
-# Linux notes and Bash code
+# Linux and Bash notes & code
 
-- [Linux notes and Bash code](#linux-notes-and-bash-code)
+- [Linux and Bash notes \& code](#linux-and-bash-notes--code)
   - [Linux notes](#linux-notes)
   - [Basic Linux OS navigation info](#basic-linux-os-navigation-info)
   - [Basic Bash commands](#basic-bash-commands)
@@ -24,7 +24,7 @@
 
 -   Chain commands with ***&&*** between them; the second (and third, and so on) commands will only be executed if the previous one was successful
 
--   To quit a process, press *q, ctrl-z,* or *ctrl-c*
+-   To quit a process, press ***q, ctrl-z,* or *ctrl-c***
 
 -   Use up arrow to cycle through previous commands used
 
@@ -48,6 +48,7 @@
 - sudo logs who ran which command
 - ***sudo*** is also the name of a group of users with sudo privileges; these users don't need to preface commands with *sudo* as they already have these privileges
 -   ***sudo [command]*** — invokes superuser privileges to bypass any permissions issues in running the given command; note that system admins can still control who can run which commands using *sudo*
+-   ***sudo su*** — switches to root user
 -   ***sudo !!*** — reruns the previous command with superuser privileges
 
 
@@ -56,7 +57,6 @@
 -  ***sudo apt update*** — checks if any packages can be upgraded; a good harmless way of checking you're connected to the internet
 
 ## Basic Linux OS navigation info
-
 
 * Files and folders are organised in a hierarchical directory tree, with the main (**root**) directory branching off into folders (also called sub-directories)
 * Each file system has a root directory, which is the **parent** for all directories in the file system — e.g. C:\ is the root for the C: drive
@@ -166,7 +166,8 @@
     * ***sudo chown -R new_owner:new_group [directory]*** — uses the -R flag to recursively change ownership for all sub-directories and files contained in directory
 * ***groupadd [group_name]***— creates a new group with given name
 * ***groupdel [group_name]*** — deletes given group
-* ***useradd [user_name] -g [group_name]***— creates user with given name to given group 
+* ***useradd [user_name] -g [group_name]***— creates user with given name to given group
+  * ***useradd -m -d [/PATH/TO/FOLDER] [username]*** — creates a user and defines their home directory
 * ***userdel [name]*** — deletes user with given name
 * ***users*** — prints users currently logged in
 * **usermod [username] [option] [optional group]:**
@@ -179,11 +180,11 @@
 * ***cat [path/file name]***— displays the contents of the given file in the shell
   *  ***-n***— optional flag to output all file contents on numbered lines in the shell
 * ***head [path/filename]***— shows the first 10 lines of the file
-    * ***head 1 [or any number of lines] [path/filename]***— shows the first however many number of lines of the file
-    * ***head c1 [or any number of characters] [path/filename]***— shows the first however many characters (or more accurately, bytes) in the file
+    * ***head -1 [or any number of lines] [path/filename]***— shows the first however many number of lines of the file
+    * ***head -c1 [or any number of characters] [path/filename]***— shows the first however many characters (or more accurately, bytes) in the file
 * ***tail [path/filename]***— shows the last 10 lines of the file
-    * ***tail n1 [or any number of lines] [path/filename]***— shows the last however many lines of the file
-    * ***tail c1 [or any number of characters] [path/filename]***— shows the last however many characters (or more accurately, bytes) in the file
+    * ***tail -n1 [or any number of lines] [path/filename]***— shows the last however many lines of the file
+    * ***tail -c1 [or any number of characters] [path/filename]***— shows the last however many characters (or more accurately, bytes) in the file
 * ***diff [first_file] [second_file]***— compares the two files and outputs the lines in each file that differ from each other
     * diff -r ***[first_directory_path] [second_directory_path]***— compares the two directories and lists the files that are only in each directory and their subdirectories
 * ***less [file name]***— displays the first page (dependent on window's size) of a long file's contents in the shell; navigate using up, down, page up, and page down keys; press ***q*** to leave the *more *command and return to the shell
@@ -272,5 +273,3 @@
 * ***arp*** — finds IP to MAC address mappings; short for Address Resolution Protocol
 * ***netstat*** — outputs basic statistics on network activities and details on ports in use and the processes using them
 * ***route*** — outputs the routing table
-
- 

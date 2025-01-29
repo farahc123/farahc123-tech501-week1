@@ -1,8 +1,14 @@
 # Nginx- and package-specific info
 
 - [Nginx- and package-specific info](#nginx--and-package-specific-info)
+  - [Installing packages](#installing-packages)
   - [Nginx](#nginx)
   - [Tree package](#tree-package)
+
+## Installing packages
+
+- 
+- To check a package has been installed, <code>  \<package name> -v </code> to get the version in Git Bash
 
 
 ## Nginx 

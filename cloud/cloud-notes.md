@@ -99,8 +99,9 @@
 
 -  You connect to a remote machine/the cloud etc. using an **SSH key-pair**, which, once created, is found in ***.ssh*** sub-directory in the local machine's home directory
 -  This contains a **public and private key**, which are used as secure access credentials when 
--  The public SSH key is shared with a server you want to access
--  The private key is always kept private and secure
+-  These connect via **port 22**
+-  The **private** SSH key PATH (not the actual encrypted key itself) is shared with a server you want to access
+-  Note that the private key itself is always kept private and secure
 -  to "ssh into" a machine essentially means to log into it
 -  To create an SSH key-pair:
    -  ***ssh-keygen <parameters>*** — this creates a private and public key pair (1 of each; private needs to be kept private) — note that when setting keypair names, don't use backspace as this will introduce weird characters into the name
