@@ -13,8 +13,9 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 # from the local machine in git, need to scp or rsync or git clone [not needed in script? but for steps? should have permissions over this folder]
 
 # scp method [private ssh] [folder from home directory of local machine] [path to home for VM, made of user @ ip:~
-# note that this takes a while]:
-scp -i ~/.ssh/tech501-farah-az-key -r nodejs20-sparta-test-app azureuser@20.254.65.158:~
+# note that this takes a while
+# removed for security]:
+scp -i 
 
 # for script?
 ls #shows repo only
