@@ -97,9 +97,14 @@
 
 ## SSH key-pairs
 
--  You connect to a remote machine/the cloud etc. using an **SSH key-pair**, which, once created, is found in ***.ssh*** sub-directory in the local machine's home directory
--  This contains a **public and private key**, which are used as secure access credentials when 
+-  You connect to a remote machine/the cloud etc. using an **SSH key-pair**, which, once created, is found in the ***.ssh*** sub-directory in the local machine's home directory
+-  This contains a **public and private key**, which are used as secure access credentials when connecting to a remote machine etc.
 -  These connect via **port 22**
+-  Elements of SSH key-pair:
+   -  **Public key**: we <code>cat</code>ed this and pasted it into the *Upload key* field on Azure's *Create an SSH key* page after selecting *Upload existing public key*
+   -  **Public key path**
+   -  P**rivate key**: this is **always** kept private
+   -  **Private key path**: this is given to the trusted resource, e.g. when natively connecting to a VM on Azure
 -  The **private** SSH key PATH (not the actual encrypted key itself) is shared with a server you want to access
 -  Note that the private key itself is always kept private and secure
 -  to "ssh into" a machine essentially means to log into it

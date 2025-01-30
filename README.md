@@ -1,5 +1,5 @@
-# Notes
-- [Markdown](markdown.md)
+# Notes for Tech501 Week 1
+- [Markdown](Markdown/markdown.md)
 - [Agile](agile/agile-intro.md)
 - [Cloud](cloud/cloud-notes.md)
 - [Git](git/git-notes.md)
