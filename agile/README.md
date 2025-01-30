@@ -1,1 +1,3 @@
-# Welcome to my  Agile notes
+# Agile
+
+- [Agile notes](agile-intro.md)

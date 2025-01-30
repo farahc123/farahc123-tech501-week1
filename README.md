@@ -1,7 +1,7 @@
 # Notes for Tech501 Week 1
-- [Markdown](Markdown/markdown.md)
-- [Agile](agile/agile-intro.md)
-- [Cloud](cloud/cloud-notes.md)
-- [Git](git/git-notes.md)
-- [Linux](linux/linux-notes.md)
-- [Nginx and other packages](linux/nginx-and-packages.md)
+- [Markdown](Markdown/README.md)
+- [Agile](agile/README.md)
+- [Cloud](cloud/README.md)
+- [Git](git/README.md)
+- [Linux](linux/README.md)
+- [Tasks](Tasks/README.md)
