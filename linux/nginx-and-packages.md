@@ -24,7 +24,7 @@
   * ***sudo systemctl restart [package name]***— restarts given package to apple changes
 * ***sudo systemctl status [package name]***— prints status of given package e.g. *active (running)*
 * ***sudo systemctl enable [package name]***— enables package so that it starts every time you start the VM
-* ***cp [optional path if not pwd/file-name] [then optional path for destination/new name if needed or add .bak]*** -- creates a backup of a file and renames it, e.g. ***cp index.html index.bak*** which backs up an index.html file
+* ***cp [optional path if not pwd/file-name] [then optional path for destination/new name if needed or add .bak]*** — creates a backup of a file and renames it, e.g. ***cp index.html index.bak*** which backs up an index.html file
 
 ## Tree package
 

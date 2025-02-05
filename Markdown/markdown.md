@@ -69,6 +69,6 @@ by wrapping text in these \<br>
 
 # Helpful tools
 
-- [**Clipboard to Markdown**](https://euangoddard.github.io/clipboard2markdown/) -- allows you to retain the formatting of pre-formatted text directly into markdown
+- [**Clipboard to Markdown**](https://euangoddard.github.io/clipboard2markdown/) — allows you to retain the formatting of pre-formatted text directly into markdown
  
 

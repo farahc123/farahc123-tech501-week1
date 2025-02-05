@@ -57,7 +57,7 @@
 
 -   ***git pull origin —*** fetches the most recent changes to a repo and merges them into your local copy, thereby updating it
 
--   ***ssh-keygen \<optional arguments>*** — generates SSH key pair; note that you need to specify name, optional passcode (and confirm that passcode/lack of again)
+-   ***ssh-keygen \<optional arguments>*** — generates SSH key pair; navigate to .ssh folder to run command; note that you need to specify name, optional passcode (and confirm that passcode/lack of again)
     -    ***ssh-keygen -t rsa* -b 4096 -C "email"*** — adds optional algorithm (set using -t and specifying algorithm), optional key size (set using -b and bit size), and optional comment (we're using an email)
 
 ## VSCode

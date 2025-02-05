@@ -56,7 +56,7 @@
 ### Levels of service 
 
 -   Depending on the cloud service, you have a **different level of control** (and thus **responsibility**) over security (also different costs)
--   So cloud isn't necessarily safer than on-premises --- it depends on the level of service you choose
+-   So cloud isn't necessarily safer than on-premises — it depends on the level of service you choose
 -   Options:
     -   **IaaS**: raw IT resources; offers wide scope of scalability; almost entirely **customisable**; e.g. AWS
     -   **PaaS**: platform that gives devs an environment to deploy code; step down from infrastructure; e.g. SAP
@@ -135,7 +135,7 @@
 >-   **Region**: UK South
 >-   **Security**: standard
 >-   **Image** (i.e. the OS that will go onto the machine): Ubuntu Pro 18.04 LTS Gen 2 [LTS means long term support for ~7 years]
->-   **Size**: Standard_B1s --- 1 vcpu, 1 GiB [very important to set correctly because this impacts pricing]
+>-   **Size**: Standard_B1s — 1 vcpu, 1 GiB [very important to set correctly because this impacts pricing]
 >-   **Administrator account**: adminuser
 >-   Use existing key pair stored in Azure (use the one with your name)
 >-   **Select inbound ports**: allow HTTP and SSH traffic
@@ -162,7 +162,7 @@
 
     -   Copy resulting modified output
 
-    -   Ensuring you're in the .ssh folder in git bash, paste this into git bash and submit --- now logged in! (note that on first login, you will need to confirm with *yes*)
+    -   Ensuring you're in the .ssh folder in git bash, paste this into git bash and submit — now logged in! (note that on first login, you will need to confirm with *yes*)
 
     -   Use ***exit*** command to log out
 
@@ -178,5 +178,5 @@ Azure's API (interface manager) is **ARM**
 
 ## Relevant Git commands
 
--   ***ssh-keygen \<parameters>*** --- this creates a private and public key pair (1 of each; private one needs to be kept private)
+-   ***ssh-keygen \<parameters>*** — this creates a private and public key pair (1 of each; private one needs to be kept private)
     -   note that when setting keypair names, **don't backspace** as this will introduce weird characters into the name

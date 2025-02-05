@@ -20,7 +20,7 @@
 
 * When using multiple flags, you combine them all after the double hyphen; order is preferential according to how you want the flags to be executed
 
--   ***#!/bin/bash*** --- a shebang placed at the beginning of a file; tells the system a file is a bash script
+-   ***#!/bin/bash*** — a shebang placed at the beginning of a file; tells the system a file is a bash script
 
 -   Chain commands with ***&&*** between them; the second (and third, and so on) commands will only be executed if the previous one was successful
 
@@ -128,7 +128,7 @@
   * * ***rm -r [directory]***— permanently deletes a non-empty directory using the recursive flag
     * ***rm -i***— requires a further'yes as 'y' before completing requested deletion
     * ***rm -f***— forces deletion without prompting; doesn't matter if files listed are nonexistent
-* ***curl -o [filename] [source url]*** --- downloads a file from given source and saves (i.e. outputs) it as filename (by default in pwd unless path provided?)
+* ***curl -o [filename] [source url]*** — downloads a file from given source and saves (i.e. outputs) it as filename (by default in pwd unless path provided?)
 
 ## Permissions in Linux
 
