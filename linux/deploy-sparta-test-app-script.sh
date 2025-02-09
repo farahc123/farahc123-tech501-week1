@@ -13,9 +13,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 # from the local machine in git, need to scp or rsync or git clone [not needed in script? but for steps? should have permissions over this folder]
 
 # scp method [private ssh] [folder from home directory of local machine] [path to home for VM, made of user @ ip:~
-# note that this takes a while
-# removed for security]:
-scp -i 
+# note that this can take a while because of size of app folder
+scp -i ~/.ssh/tech501-farah-az-key -r nodejs20-sparta-test-app azureuser@20.254.65.158:~
 
 # for script?
 ls #shows repo only
@@ -26,5 +25,5 @@ npm install [should show 0 vulnerabilities]
 
 node app.js or npm start [output: your app is ready and listening on port 3000]
 
-# for steps: paste IP address into url bar followed by :3000 to test app is running
+# then paste the app VM's IP address into URL bar followed by :3000 to test app is running
 

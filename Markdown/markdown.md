@@ -1,27 +1,28 @@
-# Markdown
+# Markdown in VS Code
 
-- [Markdown](#markdown)
+- [Markdown in VS Code](#markdown-in-vs-code)
 - [Headings:](#headings)
   - [Sub-heading](#sub-heading)
     - [Small sub-heading](#small-sub-heading)
-      - [Smaller sub](#smaller-sub)
-        - [Even smaller sub](#even-smaller-sub)
-          - [Smallest sub possible](#smallest-sub-possible)
+      - [Smaller sub-heading](#smaller-sub-heading)
+        - [Even smaller sub-heading](#even-smaller-sub-heading)
+          - [Smallest sub-heading possible](#smallest-sub-heading-possible)
 - [Bullet points and line breaks](#bullet-points-and-line-breaks)
   - [Numbered steps](#numbered-steps)
 - [Bold, italics, and formatting](#bold-italics-and-formatting)
 - [Images](#images)
 - [Links](#links)
+- [VSCode notes](#vscode-notes)
 - [Helpful tools](#helpful-tools)
 
-***Note: name files \*.md so they are interpreted as markdown***
+***Note: name notes files \*.md so they are interpreted as markdown***
 
 # Headings:
 ## Sub-heading
 ### Small sub-heading
-#### Smaller sub
-##### Even smaller sub
-###### Smallest sub possible
+#### Smaller sub-heading
+##### Even smaller sub-heading
+###### Smallest sub-heading possible
 
 --- 
 
@@ -29,9 +30,9 @@
 
 - Use when sequence is **not** important
 * Add a bullet point using asterisk
-- Add a bullet point using hyphen
-  - Add an indented point with tab
-- Escape back to bullet point on a new line using backspace
+- Or add a bullet point using hyphen
+  - Add an indented point with the tab key
+- Escape back to non-indented bullet point using backspace; escape out of bullet points entirely with backspace
 
 ## Numbered steps 
 
@@ -43,32 +44,39 @@
 
 <br> Use HTML 
 <br>to insert breaks
-by wrapping text in these \<br>
+<br> by wrapping text in \<br>
 
 # Bold, italics, and formatting
 
-- Apply **bold** with ctrl+b
-- Apply *italics* with ctrl+i
+- Apply **bold** with Ctrl+b
+- Apply *italics* with Ctrl+i
 - ***Apply both using both commands***
 - strikthrough text with double tildes on each side, e.g. ~~done~~
 - note that you can't underline in markdown
 
-> use ">" for a blockquote
+> use ">" as first character on a line for a blockquote
 
 # Images
 
-- Drag and drop plus hold shift on an image to automatically embed an image (best practice is to put these in an images folder in the repo)
+- Drag and drop while holding shift on an image to automatically embed it in a file (best practice is to put these in an images folder in the repo)
 - Add alt text in square brackets
 
-![chocolate](images/chocolate.jpg)
+![chocolate](../images/chocolate.jpg)
 
 # Links
 
-- Use square brackets [] for the link text and curly brackets () for the link itself
-- Click [here](http://www.google.com) to go to Google
+- Use square brackets [] for the link text and curly brackets () immediately afterwards for the link itself
+- e.g. click [here](http://www.google.com) to go to Google
+- To link to a file, **hold Shift** while dragging it into VS Code
+
+# VSCode notes
+
+-   Make sure to turn autosave on from VS Code File menu
+-   First file in a repo should be README.md
+-   Use **ctrl-shift-p** to bring up command line in VS code and search for something, e.g. "create table of contents"
 
 # Helpful tools
 
-- [**Clipboard to Markdown**](https://euangoddard.github.io/clipboard2markdown/) — allows you to retain the formatting of pre-formatted text directly into markdown
+- [**Clipboard to Markdown**](https://euangoddard.github.io/clipboard2markdown/) — allows you to retain the formatting of pre-formatted text and convert it into markdown
  
 
