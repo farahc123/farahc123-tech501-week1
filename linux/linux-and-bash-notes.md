@@ -34,6 +34,9 @@
 -   Use **up and down arrow keys** to cycle through command history
 -   note that a **single > rewrites a given file** with the output of the preceding command, while **>> merely appends it**
 -   note that it's likely better for code to be interepreted from `/bin/bash` not `/bin/sh`, because Nash is Sh 2.0 (offers more features and is more user-friendly)
+-   *[command 1]* **|** *[command 2]* — this **pipe character** passes the output of one command as input to another, e.g.:
+    -   `ps aux | grep node`
+    -   or `ls -l | head -n 3 | tail -n 2 > results.txt` to first get the top 3 lines from `ls -l`'s output and then get the bottom 2 of these and create a `results.txt` file to hold the output
 
 ### Sudo
 
@@ -140,7 +143,15 @@
     * **g** — second for group (users in the same group as owner)
     * **o** — third for other (users not in the same group)
     * **a** — all users (not usually included in permissions detail; more for setting purposes)
+* by default, file owners have read and write permissions and everyone else has read access; for folders, owner has all permissions and everyone else has read and execute permissions
+  * owners don't automatically have execute permissions over their file because of Linux's **user mask (umask)**, which defines the default permissions
+  * execute permissions are usually not given automatically to stop files being run as programmes that shouldn't, thereby protecting the system
+  * the umask can be changed for a terminal session using `umask [value]` (see [possible values here](https://www.geeksforgeeks.org/umask-command-in-linux-with-examples/))
+  * or permanently by editing the bashrc file like:
+    * `echo "umask [value]" >> ~/.bashrc`
+    * and then reloading this file like `source ~/.bashrc`
 * permissions often decrease from left (user) to right (other) as users often have more permissions for a file than everyone else
+* to view the file owner, run `ls -l`
 * **groups** are used to allow or restrict access and permissions to directories and files
 *  **permissions in symbolic textual format** (i.e. not using absolute octal numbers e.g. 700 or 333) include:
      *  who — *u/g/o/a* or empty for all; note that these are stackable e.g. *ug* or *go*
@@ -152,7 +163,7 @@
      *  4 --- read
      *  2 --- write
      *  1 --- execute
-     *  you **add** these to come up with a three-digit number symbolising permissions for user/group/others, e.g. 777 means full permissions for all
+     *  you **add** these to come up with a three-digit number symbolising permissions for user/group/others in that order, e.g. 777 means full permissions for all
   
   ## Permissions-related commands
 
